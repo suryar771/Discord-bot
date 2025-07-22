@@ -7,6 +7,18 @@ const commands = [
         name: "ping",
         description: "Replies with Pong!",
     },
+    {
+        name: "create",
+        description: "Shortens a URL",
+        options: [
+          {
+            name: "url",
+            type: 3, // STRING
+            description: "URL to shorten",
+            required: true,
+          },
+        ],
+      }
 ];
 
 // Create REST client instance with your bot token
