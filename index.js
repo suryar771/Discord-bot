@@ -16,7 +16,11 @@ client.on("ready", () => {
 client.on("messageCreate", (message) => {
   if (!message.author.bot) {
     console.log(`💬 ${message.author.username}: ${message.content}`);
+    
+    message.reply("hey there");
   }
+
+  return;
 });
 
 client.login(process.env.DISCORD_TOKEN);
